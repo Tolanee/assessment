@@ -26,3 +26,12 @@ table{
 table .list{
   width: 100%;
 }
+td th{
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+}
