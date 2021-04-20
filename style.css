@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+form div{
+  padding-bottom: 1em;
+}
+form input{
+  padding: 0.3em;
+}
+#btn{
+  width: 8em;
+  height: 2em;
+  background: white;
+  border: 1px solid crimson;
+
+}
+table{
+  width: 80%;
+  border: 1px solid;
+  align-items: center;
+}
+table .list{
+  width: 100%;
+}
