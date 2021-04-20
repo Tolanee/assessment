@@ -14,5 +14,13 @@ function newRecord(data){
   var table = document.getElementById("serial-no").getElementsByTagName('tbody')[0];
   var row = table.insertRow(table.length);
   firstCell = row.insertCell(0);
-  firstCell.innerHTML = data.serial-Node;
+  firstCell.innerHTML = data.product-id;
+  secondCell = row.insertCell(1);
+  secondCell.innerHTML = data.product;
+  thirdCell = row.insertCell(2);
+  thirdCell.innerHTML = data.payment-type;
+  fourthCell = row.insertCell(3);
+  fourthCell.innerHTML = data.amount;
+  fifthCell = row.insertCell(4);
+  fifthCell.innerHTML = data.serial-no;
 }
