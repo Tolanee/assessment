@@ -14,7 +14,7 @@
     <table  class="list">
       <tr>
         <td>
-          <form onsubmit=event.preventDefault();onFormSubmit(); autocomplete="off" id="form">
+          <form onsubmit="event.preventDefault();"onFormSubmit(); autocomplete="off" id="form">
             <div>
             <label for=>S/N</label>
             <input type="number" name="serial-no" id="serial-no">
@@ -40,12 +40,12 @@
             <input type="number" name="amount" id="amount">
            </div>
            <div>
-            <label for=>submit</label>
-            <input type="submit" value="submit">
+            
+            <input type="submit" value="submit" class="submit">
            </div>
           </form>
         </td>
-        
+          <td> 
           <table class="list" id="product-head">
           <thead>
             <tr>
@@ -56,10 +56,12 @@
               <th>Amount</th>
             </tr>
           </thead>
-          </table>
           <tbody>
-            
+
           </tbody>
+          </table>
+        </td>
+      </tr>
     </table>
   </main>
   <script src="script.js"></script>

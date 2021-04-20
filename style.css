@@ -11,7 +11,7 @@ form div{
 form input{
   padding: 0.3em;
 }
-#btn{
+.submit{
   width: 8em;
   height: 2em;
   background: white;
@@ -20,7 +20,7 @@ form input{
 }
 table{
   width: 80%;
-  border: 1px solid;
+ 
   align-items: center;
 }
 table .list{

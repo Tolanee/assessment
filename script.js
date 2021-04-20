@@ -1,17 +1,19 @@
 function onFormSubmit(){
 var Data= readData();
+newRecord(Data);
 }
+
 function readData(){
-  var Data ={}
+  var Data ={};
   Data["serial-no"]=document.getElementById("serial-no").value;
   Data["product-id"]=document.getElementById("product-id").value;
   Data["product"]= document.getElementById("product").value
   Data["payment-type"]= document.getElementById("payment-type").value
   Data["amount"]=document.getElementById("amount").value
-  return Data
+  return Data;
 }
 function newRecord(data){
-  var table = document.getElementById("serial-no").getElementsByTagName('tbody')[0];
+  var table = document.getElementById("product-head").getElementsByTagName('tbody')[0];
   var row = table.insertRow(table.length);
   firstCell = row.insertCell(0);
   firstCell.innerHTML = data.product-id;
@@ -22,5 +24,6 @@ function newRecord(data){
   fourthCell = row.insertCell(3);
   fourthCell.innerHTML = data.amount;
   fifthCell = row.insertCell(4);
-  fifthCell.innerHTML = data.serial-no;
+  fifthCell.innerHTML = `<a>Edit</a>
+                        <a>Delete</a>`;
 }
