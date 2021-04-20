@@ -13,4 +13,6 @@ function readData(){
 function newRecord(data){
   var table = document.getElementById("serial-no").getElementsByTagName('tbody')[0];
   var row = table.insertRow(table.length);
+  firstCell = row.insertCell(0);
+  firstCell.innerHTML = data.serial-Node;
 }
